@@ -39,7 +39,7 @@ body {
 .about-me-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 70px 250px;
+    padding: 70px 270px;
 }
 
 .right-column {
