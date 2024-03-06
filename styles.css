@@ -8,7 +8,7 @@ body {
 }
 
 .content {
-    padding: 70px 100px;
+    padding: 70px 250px;
     font-family: Helvetica, sans-serif
 
 }
@@ -34,4 +34,14 @@ body {
     padding: 10px 400px;
     font-family: Helvetica, sans-serif
 
+}
+
+.about-me-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 70px 250px;
+}
+
+.right-column {
+    padding-top: 60px;
 }
