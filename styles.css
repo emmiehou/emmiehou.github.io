@@ -12,3 +12,20 @@ body {
     font-family: Helvetica, sans-serif
 
 }
+
+.contact {
+    color:rgb(55, 55, 55)
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: rgb(47, 47, 47);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.button-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
