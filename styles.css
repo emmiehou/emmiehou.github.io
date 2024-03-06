@@ -29,3 +29,9 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+.about_text {
+    padding: 10px 400px;
+    font-family: Helvetica, sans-serif
+
+}
