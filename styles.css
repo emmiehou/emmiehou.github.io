@@ -39,9 +39,13 @@ body {
 .about-me-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 70px 270px;
+    padding: 70px 280px;
 }
 
 .right-column {
     padding-top: 60px;
+}
+
+.photo-container img {
+    margin-bottom: 10px;
 }
