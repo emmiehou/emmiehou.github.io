@@ -131,14 +131,9 @@ body {
 }
 
 .carousel-track {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
     display: flex;
     gap: 15px; /* Wix uses smaller gap */
     padding: 0 20px;
-    transition: transform 0.3s ease-out;
 }
 
 .carousel-track img {
@@ -149,6 +144,11 @@ body {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+    transition: transform 0.3s ease-out;
+}
+
+.carousel-track:active {
+    cursor: grabbing;
 }
 
 .carousel-button {
