@@ -232,6 +232,17 @@ body {
     color: white;
     font-family: Helvetica, sans-serif;
     font-size: 25px;
+    cursor: pointer;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #808080;
 }
 
 /* Projects Grid Styles */
