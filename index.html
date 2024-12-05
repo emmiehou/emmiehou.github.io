@@ -7,28 +7,48 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
-<body>  {
-    background-color: black;
-        color: white; /* This sets the default text color to white for better visibility */
-    }
+<body>
+    <div class="logo">emmie hou</div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="active">home</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="about_me.html">about me</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+
     <div class="content">
-        <h1>👋 Hey, I'm Emmie.</h1>
-        <p>Student-athlete, future engineer.</p>
-        <img src="images/emmie_bowl.jpg" alt="Emmie holding bowl" width="300">
-        <div class="button-container">
-            <a href="contact.html" class="button">Contact me</a>
-            <a href="about_me.html" class="button">About me</a>
+        <h1 class="content-title">my work</h1>
+        
+        <div class="carousel-container">
+            <button class="carousel-button prev" aria-label="Previous">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="images/layeredwoodbowl.JPG" alt="layered wood bowl">
+                    <img src="images/rollingmetalkitchencartbutcherblock.jpg" alt="rolling metal kitchen cart">
+                    <img src="images/milkspeakerfront.JPG" alt="milk speaker front">
+                    <img src="images/woodmetaltable.JPG" alt="wood and metal table">
+                    <img src="images/bananahanger.jpg" alt="banana hanger">
+                    <img src="images/minibaseballbat.JPG" alt="mini baseball bat">
+                    <img src="images/acrylicbballsoftballlamp.JPG" alt="acrylic basketball and softball lamp">
+                    <img src="images/minipicnictable.JPG" alt="mini picnic table">
+                    
+                </div>
+            </div>
+            <button class="carousel-button next" aria-label="Next">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
         </div>
-
     </div>
 
-    <div class="photo-grid">body {
-        <img src="layeredwoodbowl.jpg" alt="layered wood bowl">
-        <img src="rollingmetalkitchencartbutcherblock.jpg" alt="rolling metal kitchen cart">
-        <img src="woodmetaltable.jpg" alt="wood and metal table">
-    }
-    </div>
-
+    <script src="carousel.js"></script>
 </body>
 
 </html>
