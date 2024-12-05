@@ -49,3 +49,29 @@ body {
 .photo-container img {
     margin-bottom: 10px;
 }
+
+.square-image-container {
+    width:200px;
+    height:200px;
+    overflower: hidden;
+    #keeps the photo cropped and hides the rest of the image that doesn't fit in the 200px sizing
+}
+
+.square-image-container img {
+    width: 100%;
+    height: 100%;  
+    object-fit: cover; 
+    #keeps the photo cropped but maintains the aspect ratio
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
