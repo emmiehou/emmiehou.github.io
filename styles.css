@@ -686,3 +686,45 @@ body {
     color: #ff4444;
     border: 1px solid #ff4444;
 }  
+
+/* Lamp */
+.lamp-image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.lamp-image-grid img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.project-features {
+    margin-bottom: -80px;
+}
+
+.lamp-bottom-image {
+    margin-top: -80px;
+    text-align: center;
+    rotate: 90deg;
+    margin-bottom: -80px;
+}
+
+.lamp-bottom-image img {
+    width: 400px;
+    height: auto;
+}
+
+/* Banana Hanger */
+.banana-hanger-images {
+    margin: 20px 0;
+    width: 15%;
+}
+
+.banana-hanger-images img {
+    width: 15%;
+    height: auto;
+    margin-bottom: 20px;
+}
