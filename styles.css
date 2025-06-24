@@ -786,6 +786,44 @@ body {
 }
 
 /* Butcher Block */
+.butcher-block-image {
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 10px;
+}
+
+.butcher-block-image img {
+    height: 600px;
+    margin-bottom: 20px;
+}
+
+.butcher-block-grid {
+    display: flex;
+    flex-direction: column; /* stacks rows vertically */
+    gap: 10px;  
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.butcher-block-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row img {
+    height: 380px; /* adjust as needed */
+    width: auto;
+    flex: 1; 
+    object-fit: contain;
+}
 
 /* Kitchen Cart */
 .kitchen-cart-image-grid {
