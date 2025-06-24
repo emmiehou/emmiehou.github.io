@@ -11,6 +11,7 @@ body {
     background-color: #252525;  /* Very dark grey, almost black */
     text-align: left;
     color: white;  /* White text */
+    position: relative;
 }
 
 .content {
@@ -221,19 +222,17 @@ body {
 
 /* Navigation Bar Styles */
 .navbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    justify-content: right;
-    padding: 20px;
+    position: absolute;
+    top: 30px;
+    right: 30px;    
 }
 
 .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 10px 15px;
     display: flex;
     gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
 }
 
 .navbar li {
@@ -257,14 +256,13 @@ body {
 }
 
 .logo {
-    position: fixed;
-    top: 10px;
-    left: 20px;
-    padding: 20px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
     color: white;
+    text-decoration: none;
     font-family: Helvetica, sans-serif;
-    font-size: 25px;
-    cursor: pointer;
+    font-size: 25px;    
 }
 
 .logo a {
@@ -687,16 +685,16 @@ body {
     border: 1px solid #ff4444;
 }  
 
-/* Lamp */
+/* Lamp*/
 .lamp-image-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 10px;
 }
 
 .lamp-image-grid img {
     width: 100%;
-    aspect-ratio: 1;
+    height: auto;
     object-fit: cover;
     transition: transform 0.2s ease;
 }
@@ -705,26 +703,94 @@ body {
     margin-bottom: -80px;
 }
 
-.lamp-bottom-image {
-    margin-top: -80px;
+.footer-image {
     text-align: center;
-    rotate: 90deg;
-    margin-bottom: -80px;
+    padding: 20px;
+    padding-top: 80px;
 }
 
-.lamp-bottom-image img {
-    width: 400px;
+.footer-image img {
+    width: 800px;
     height: auto;
 }
 
 /* Banana Hanger */
 .banana-hanger-images {
+    text-align: center;
     margin: 20px 0;
-    width: 15%;
+    padding-top: 10px;
 }
 
 .banana-hanger-images img {
-    width: 15%;
-    height: auto;
+    height: 600px;
     margin-bottom: 20px;
+}
+
+/* Milk Speaker */
+.milk-speaker-image-grid {
+    display: flex;
+    flex-direction: column; /* stacks rows vertically */
+    gap: 10px;  
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row img {
+    height: 380px; /* adjust as needed */
+    width: auto;
+    flex: 1; 
+    object-fit: contain;
+}
+
+.milk-speaker-vertical-image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.milk-speaker-vertical-image-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+/* Segmented Bowl */
+.segmented-bowl-image-grid {
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    gap: 10px;
+    max-width: 800px;      /* adjust as needed */
+    margin: 0 auto;  
+}
+
+.segmented-bowl-image-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1.3;   /* ensures images are always portrait */
+    object-fit: cover;     /* keeps images nicely cropped */    
+}
+
+/* Butcher Block */
+
+/* Kitchen Cart */
+.kitchen-cart-image-grid {
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    gap: 10px;
+    max-width: 800px;      /* adjust as needed */
+    margin: 0 auto;  
+}
+
+.kitchen-cart-image-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1.3;   /* ensures images are always portrait */
+    object-fit: cover;     /* keeps images nicely cropped */    
 }
