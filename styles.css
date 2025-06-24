@@ -257,12 +257,17 @@ body {
 
 .logo {
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 25px;
+    left: 25px;
     color: white;
     text-decoration: none;
     font-family: Helvetica, sans-serif;
     font-size: 25px;    
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
 }
 
 .logo a {
@@ -613,8 +618,8 @@ body {
     display: none;
 }
 
-.form-group input:invalid,
-.form-group textarea:invalid {
+.form-group-email input:invalid,
+.form-group-email textarea:invalid {
     border-color: #ff4444;
 }
 
@@ -640,7 +645,9 @@ body {
 }
 
 .form-group input,
-.form-group textarea {
+.form-group-name input,
+.form-group-email input,
+.form-group-message textarea {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid #333;
@@ -652,7 +659,7 @@ body {
 }
 
 .form-group input:focus,
-.form-group textarea:focus {
+.form-group-name .form-group-email .form-group-message textarea:focus {
     outline: none;
     border-color: #ffffff;
 }

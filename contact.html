@@ -4,12 +4,12 @@
 <head>
     <title>Contact - Emmie Hou</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/portfoliologo.png" type="image/png">
 </head>
 
 <body>  
     <a href="index.html" class="logo-link">
-        <div class="logo">emmie hou</div>
+        <div class="logo"><img src="images/portfoliologo.png" alt="portfolio logo"></div>
     </a>
     <nav class="navbar">
         <ul>
@@ -25,20 +25,18 @@
         <div class="contact-content">
             <p>you can reach me through the form below:</p>
             <form id="contactForm" action="https://formspree.io/f/xzzgjedl" method="POST" class="contact-form">
-                <div class="form-group">
+                <div class="form-group-name">
                     <label for="name">name</label>
-                    <input type="text" id="name" name="name" required minlength="2">
-                    <span class="error-message" id="nameError"></span>
+                    <input type="text" id="name" name="name" required minlength="1">
                 </div>
-                <div class="form-group">
+                <div class="form-group-email">
                     <label for="email">email</label>
                     <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                     <span class="error-message" id="emailError"></span>
                 </div>
-                <div class="form-group">
+                <div class="form-group-message">
                     <label for="message">message</label>
-                    <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
-                    <span class="error-message" id="messageError"></span>
+                    <textarea id="message" name="message" rows="5" required minlength="1"></textarea>
                 </div>
                 <button type="submit" class="submit-button">send message</button>
                 <div id="formStatus" class="form-status"></div>
