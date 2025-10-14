@@ -43,6 +43,11 @@ def process_csv(file_path):
     # Calculate time elapsed in seconds from the first timestamp
     first_timestamp = df[timestamp_col].min()
     seconds_elapsed = (df[timestamp_col] - first_timestamp).dt.total_seconds()
+
+    # Filter to keep only rows strictly before 40 minutes (2400 seconds)
+    mask_lt_40min = seconds_elapsed < (40 * 60)
+    df = df[mask_lt_40min].copy()
+    seconds_elapsed = seconds_elapsed[mask_lt_40min]
     
     # Convert seconds to HH:MM:SS format
     df['time_elapsed'] = seconds_elapsed.apply(seconds_to_hhmmss)
@@ -80,17 +85,6 @@ def merge_dataframes(dfs):
                                   on='time_elapsed', 
                                   how='left')
     
-    # Add comparison columns
-    # First, create a combined pellet count column
-    pellet_cols = [col for col in merged_df.columns if col.endswith('_pellet_count')]
-    merged_df['comparison_pellet_count'] = merged_df[pellet_cols].mean(axis=1)
-    
-    # Then create separate retrieval time columns for comparison
-    retrieval_cols = [col for col in merged_df.columns if col.endswith('_retrieval_time')]
-    for col in retrieval_cols:
-        source_name = col.replace('_retrieval_time', '')
-        merged_df[f'comparison_{source_name}_retrieval'] = merged_df[col]
-    
     return merged_df
 
 def main():
@@ -99,8 +93,8 @@ def main():
         print("\n--- New Batch Processing ---")
         file_paths = select_files()
         if not file_paths:
-            print("No files selected. Please select files for processing.")
-            continue
+            print("No files selected. Exiting.")
+            return
         
         # Process each file and store in a list
         processed_dfs = []
