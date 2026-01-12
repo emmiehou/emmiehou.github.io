@@ -97,8 +97,24 @@ body {
     transition: transform 0.2s ease;
 }
 
-.image-grid img:nth-child(3) {
-    grid-column: span 2;
+.image-grid > img:nth-of-type(3) {
+    grid-column: 1 / -1 !important;
+    aspect-ratio: 2 / 1; /* shorter height while keeping full width */
+}
+
+.image-grid > img:nth-of-type(4) {
+    grid-column: 1 / -1 !important; /* match width of the 3rd image */
+}
+
+/* Class-based rules to ensure reliability */
+.image-grid img.wide-short {
+    grid-column: 1 / -1;
+    aspect-ratio: 2 / 1;
+}
+
+.image-grid img.wide {
+    grid-column: 1 / -1;
+    aspect-ratio: 2 / 1;
 }
 
 @media (max-width: 768px) {
