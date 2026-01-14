@@ -875,6 +875,21 @@ body {
     height: 100%;
 }
 
+/* PDF Viewer */
+.pdf-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin: 20px 0;
+}
+
+.pdf-container object,
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 /* Blog */
 .blog-container {
     display: flex;

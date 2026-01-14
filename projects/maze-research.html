@@ -26,15 +26,57 @@
                 <img src="../images/maze-research/biobserve-slide.png" alt="biobserve slide">
             </div>
             <div class="project-description">
-                <p>This summer, I developed a novel behavioral assay to test cognitive flexibility in mouse models. with the amazing mentorship of Christine Liu and all those in the Sohal Lab at UCSF, I designed, built, and ran experiments on a modular labrything maze to investigate how mice adapt to changing environments.</p>
+                <p>Understanding cognitive flexibility requires behavioral tasks that capture more than one single choice. Traditional rodent assays often rely on single decisions or static environments, which limit the ability to study how animals adapt their strategies across changing conditions.</p>
+                <p>To address this, I designed and piloted a novel, low-cost, modular labyrinth maze assay that measures multi-step, navigation-based decision-making in mice. The system enables rapid reconfiguration of paths, allowing each trial to contain at least six decision nodes and support precise analysis of mPFC-dependent cognitive flexibility. </p>
+                <p>This project involved full ownership of assay design, hardware integration/automation, protocol development, and validation, from concept through data collection and presentation.</p></p>
+                <h3>Presentation at UCSF Undergraduate Computational Neuroscience Symposium 2025</h3>
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/hQQ82ITbBAQ" title="Maze Research Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
+                <h3>Poster at the Society for Neuroscience 2025 conference</h3>
+                <div class="pdf-container">
+                    <object data="../images/SfN25_MazePoster.pdf" type="application/pdf" width="100%" height="100%">
+                        <iframe src="../images/SfN25_MazePoster.pdf" title="SfN Maze Poster" width="100%" height="100%"></iframe>
+                    </object>
+                </div>
+                <div class="button-container">
+                    <a class="button" href="../images/SfN25_MazePoster.pdf" target="_blank" rel="noopener noreferrer">open full screen</a>
+                </div>
+                <h2>design goals</h2>
+                <p>The primary goals of this project were to: </p>
+                <ul>
+                    <li>Capture multi-decision behavioral sequences, not just single-choice outcomes</li>
+                    <li>Enable rapid task reconfiguration to probe flexibility rather than learned routes</li>
+                    <li>Improve experimental efficiency and reproducibility through automation</li>
+                    <li>Create an accessible and low-cost system that could be iterated quickly</li>
+                </ul>
+                <p>To meet these goals I built the maze using LEGO modular components, which allowed paths and intersections to be rearranged between sessions without rebuilding the apparatus. Each intersection functions as a discrete decision node, enabling behavioral analysis of strategies taken.</p>
+                
                 <div class="project-images">
                     <img src="../images/maze-research/lego-maze.png" alt="lego maze">
                 </div>
-                <h2>research focus</h2>
-                <p>I joined the Sohal Lab at UCSF in spring of 2025 to study cognitive flexibility involving the mPFC neural circuits in mice. This summer, I participated in the UCSF Undergraduate Computational Neuroscience program, where I attended workshops on professional development, scientific research skills, and conducted my own research. </p>
+                <p>Maze structure: Modular LEGO-based labyrinth with configurable corridors, dead ends, and intersections</p>
+                <p>Decision nodes: Each intersection represents a defined choice point</p>
+                <p>Task flexibility: Walls and routes can be reconfigured between trials or days</p>
+                <p>This design moves beyond traditional hippocampal-dependent spatial memory tasks and single-decision mPFC digging assays by explicitly probing how animals adapt decision strategies when environmental rules change.</p>
+            
+                <h2>automation and instrumentation</h2>
+                <p>To improve consistency and reduce hands-on intervention during trials, I integrated automation into the assay:</p>
+                <ul>
+                    <li>Designed and programmed Arduino-based controllers to track trial state and reward eligibility</li>
+                    <li>Integrated beam breaker sensors to detect animal position and task progression</li>
+                    <li>Implemented automated reward delivery, reducing human error and timing variability</li>
+                </ul>
+                <p>To meet these goals I built the maze using LEGO modular components, which allowed paths and intersections to be rearranged between sessions without rebuilding the apparatus. Each intersection functions as a discrete decision node, enabling behavioral analysis of strategies taken.</p>
+
+                <h2>experimental development</h2>
+                <p>Because this assay was novel, no established protocol existed. I:</p>
+                <ul>
+                    <li>Wrote experimental procedures from scratch, including trial structure and timelines</li>
+                    <li>Defined measurable behavioral outputs aligned with cognitive flexibility</li>
+                    <li>Iteratively refined the maze and automation based on pilot data</li>
+                    <li>Troubleshot unanticipated errors, including sensor misfires, ambiguous decision boundaries, and structural deficits</li>
+                </ul>
             </div>  
            
             <div class="footer-image">
